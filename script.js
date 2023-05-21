@@ -55,9 +55,26 @@ $(function(){  //This replaced the $(document).ready(function()
     element.innerHTML = "You clicked/entered this paragraph " + ++count6 + " times.";
   })
 
-});
-
 //Other events:
 //dblclick, mouseenter, mouseleave, mousedown, mouseup, hover
 
 //form events: focus, blur, change
+
+//jQuery Effects
+  $("h4").hide()
+  $("h4").fadeIn(2000).addClass("blue");
+  $("#titan").hide(500); //can also be .hide() or .hide("slow")
+  $("#titan").show(3000);
+  $("#titan").slideUp(1000);
+  $("#titan").slideDown(1000);
+  $("#titan").fadeOut(1500);
+  $("#titan").fadeIn(1500);
+  $("#titan").toggle(700); //toggle makes it disappar when it is already there and makes it appear when it is not there
+  $("#titan").toggle(700);
+  
+  $("#titan").on("click", function(){
+    $("#titan").stop();
+  })
+
+  $("#header4_1").hide(500).delay(1000).show(300);
+  });
