@@ -28,7 +28,36 @@ $(function(){  //This replaced the $(document).ready(function()
     element.innerHTML = ("You moved over me " + count2 + " times");
     count2++;
   })
+
+  var count3 = 0; //increments on mouseenter
+  var count4 = 0; //increments on mouseleave
+  $("#para3").hover(function(){
+    var element = document.getElementById("para3");
+    element.innerHTML = ("You hovered over me " + ++count3 + " times and left me " + count4 + " times.");
+  },
+    function(){
+      var element = document.getElementById("para3");
+      element.innerHTML = ("You hovered over me " + count3 + " times and left me " + ++count4 + " times.");
+    })
+
+  //focus event
+  var count5 = 0; //counts the number of time you enter an input field
+  $("#input1").focus(function(){
+    var element = document.getElementById("para4");
+    element.innerHTML = ("You clicked in the input field " + ++count5 + " times.");
+    
+  })
+
+  //Multievent test
+  var count6 = 0;
+  $("#para5").on("click mouseenter", function(){
+    var element = document.getElementById("para5");
+    element.innerHTML = "You clicked/entered this paragraph " + ++count6 + " times.";
+  })
+
 });
 
 //Other events:
 //dblclick, mouseenter, mouseleave, mousedown, mouseup, hover
+
+//form events: focus, blur, change
