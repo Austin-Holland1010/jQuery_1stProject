@@ -61,6 +61,7 @@ $(function(){  //This replaced the $(document).ready(function()
 //form events: focus, blur, change
 
 //jQuery Effects
+  /*
   $("h4").hide()
   $("h4").fadeIn(2000).addClass("blue");
   $("#titan").hide(500); //can also be .hide() or .hide("slow")
@@ -77,4 +78,26 @@ $(function(){  //This replaced the $(document).ready(function()
   })
 
   $("#header4_1").hide(500).delay(1000).show(300);
+  */
+
+  //jQuery animate
+  //.animate( properties [,duration] [,easing] [,complete])
+  //.animate( properties, options )
+
+$("#go").click(function(){
+  $("#block")
+  .animate({ width: "90%"}, 1000)
+  .animate({ fontSize: "40px"}, 1000)
+  .animate({ borderLeftWidth: "30px"}, 1000)
+  /*
+    .animate({
+    opasity: .5,
+    marginLeft: "+=50",
+    height: "400px"
+  }, 3000, "linear", function(){
+    $(this).after("<div> Animation complete.</div>");
+  });
+  */
+});
+  
   });
