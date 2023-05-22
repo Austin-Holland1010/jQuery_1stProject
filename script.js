@@ -119,6 +119,31 @@ $("#go").click(function(){
     $("#name").val("Bobby Goat");
   })
 
+  //Adding and Removing elements
+  $('.target')
+    .append('<div class="child">Append</div>', '<p> Hello, this paragraph is after the Append div</p>')
+    .prepend('<div class="child">Prepend</div>')
+    .before('<div class="sibling">Before</div>')
+    .after('<div class="sibling">After</div>')
+
+//$('p').append('<b>LOTS</b>');
+
+  //$('.target').remove();
+  //$('p').remove();
+  $('p').remove('.filter');
+  //$('.target').empty();
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  
-  });
+});
