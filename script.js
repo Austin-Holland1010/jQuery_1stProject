@@ -99,5 +99,26 @@ $("#go").click(function(){
   });
   */
 });
+
+  //Get and Set with http, text, val, and attr
+  $("#part5_btn").click(function(){
+    console.log($("#test").text);
+    //console.log($("#test").html)
+    console.log($("#fcc").attr("href"));
+  })
+
+  $("#setContent").click(function(){
+    //$("#test").text("freeCodeCamp is cool!");
+    //$("#test").html("freeCodeCamp is <b>cool!</b>");
+    $("#test").text(function(i, origText){
+      return "Old text: " + origText + " New text: freeCodeCamp is cool! (index: " + i + ")"
+    })
+  })
+
+   $("#inputName_btn").click(function(){
+    $("#name").val("Bobby Goat");
+  })
+
+  
   
   });
