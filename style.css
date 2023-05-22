@@ -29,6 +29,14 @@ body{
   background-color: slategrey;
 }
 
+.red {
+  color: red;
+}
+
+.big {
+  font-size: 36px;
+}
+
 .blue {
   background: blue
 }

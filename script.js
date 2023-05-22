@@ -133,7 +133,21 @@ $("#go").click(function(){
   $('p').remove('.filter');
   //$('.target').empty();
 
-
+//CSS and Classes
+$('#part7_btn').click(function(){
+  console.log($("p.big").css("fontSize"));
+  //$("p.big").css("font-size", "100px");
+  /*$("p.big").css({
+      fontSize: "50px",
+      color: "blue",
+      backgroundColor: "yellow"
+  });
+  */
+  $("h2").addClass("red");
+  //$("p").removeClass("big");
+  $("p").toggleClass("big");
+  console.log($("h2").hasClass("red"));
+});
 
 
 
